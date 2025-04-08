@@ -62,6 +62,9 @@ jobs:
               with:
                   enable-cache: true
                   pyproject-file: 'pyproject.toml'
+                  
+            - name: Setup uv
+              run: uv venv # Sets up a UV virtual environment
 
             - name: Install SAML (python3-saml) dependencies
               shell: bash
